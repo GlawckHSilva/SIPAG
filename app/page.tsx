@@ -1,23 +1,29 @@
-'use client'
+import { supabase} from '@/lib/supabase'
 
-import { supabase } from '@/lib/supabase'
 
-export default function Home() {
+export default function Cad() {
 
-  async function testConnection() {
-    const { data, error } = await supabase
-      .from('expenses')
-      .select('*')
+    return (
+        <main>
+          <section>           
+            <button>voltar</button>
 
-    console.log(data)
-    console.log(error)
-  }
+            <img src="/logo.png" alt="Logo" />
 
-  return (
-    <main>
-      <button onClick={testConnection}>
-        Testar conexão
-      </button>
-    </main>
-  )
-}
+            <h1> Crie sua conta</h1>
+            <p>É rápido, seguro e gratuito!</p>
+          </section>
+
+          <section>
+            <form>
+              <input type="text" placeholder="Nome Completo" required />
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Senha" required />
+              <button type="submit">Criar Conta</button>  
+            </form>
+          </section>
+
+        </main>
+    );
+
+};
