@@ -1,0 +1,24 @@
+<svg xmlns="http://w3.org" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <!-- Importação da fonte para garantir que o texto apareça redondo e moderno como o original -->
+    <style>
+      @import url('https://googleapis.com');
+      .sipag-blue { fill: #0066FF; }
+      .sipag-text { font-family: 'Fredoka', 'Segoe UI', sans-serif; font-weight: 500; font-size: 96px; fill: #0066FF; }
+    </style>
+  </defs>
+
+  <!-- ÍCONE: Quadrado azul com cantos arredondados -->
+  <rect x="40" y="40" width="120" height="120" rx="35" class="sipag-blue" />
+
+  <!-- SÍMBOLO: Cifrão estilizado vazado (desenhado em branco por cima) -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+    <!-- Linha vertical do cifrão -->
+    <path d="M 100,52 L 100,148" stroke-width="10" />
+    <!-- Curva do S (ajustada para cobrir o centro da linha) -->
+    <path d="M 125,78 C 125,60 75,60 75,82 C 75,108 125,102 125,124 C 125,145 75,145 75,128" stroke-width="12" />
+  </g>
+
+  <!-- TEXTO: Alinhado verticalmente com o ícone -->
+  <text x="185" y="130" class="sipag-text">sipag</text>
+</svg>

@@ -1,6 +1,7 @@
 'use client'
 
-import { supabase} from '@/lib/supabase'
+import Image from 'next/image'
+/*import { supabase } from '@/lib/supabase'*/
 import React, { useState} from 'react'
 
 
@@ -41,7 +42,7 @@ export default function Cad() {
           <section>           
             <button>voltar</button>
 
-            <img src="/logo.png" alt="Logo" />
+            <Image src="/Logo_L.svg" alt="Logo" width={100} height={100} />
 
             <h1> Crie sua conta</h1>
             <p>É rápido, seguro e gratuito!</p>
@@ -61,8 +62,8 @@ export default function Cad() {
           </section>
 
           <section>
-              <button> Continuar com Google</button>
-              <button> Continuar com Apple</button>
+              <button><Image src="/google-logo.svg" alt="Google" width={20} height={20} /> Continuar com Google</button>
+              <button><Image src="/apple-logo.svg" alt="Apple" width={20} height={20} /> Continuar com Apple</button>
 
               <p>Já tem uma conta?<a href="/login"> Entrar</a></p>
           </section>
